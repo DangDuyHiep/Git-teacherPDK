@@ -1,0 +1,219 @@
+body{
+    margin: 0;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.wrapper{
+    width: 100%;
+}
+
+.header{
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 2;
+}
+
+.header ul{
+    margin: 0;
+}
+
+.name ul li{
+    float: left;
+    display: inline-block;
+    padding: 15px 0px;
+}
+
+.header .test{
+    text-decoration: none;
+    font-size: 18px;      
+    color: black;   
+    padding: 8px 20px;
+}
+
+
+.header .test:hover{   
+    background-color: #757575;
+}
+
+.menu ul .menu-a{
+    display: inline-block;
+    padding: 15px 0px;
+    float: right;
+}
+
+.menu ul li > .sub-menu{
+    display: none;
+}
+
+.menu .sub-menu{
+    list-style: none;
+}
+
+.menu ul li:hover .sub-menu{
+    display: block;
+}
+
+.menu .sub-menu .sub-menu-a{
+    padding: 15px 0px;
+}
+
+.panner{
+    width: 100%;
+    position: relative;
+}
+
+.panner .panner-h1{
+    position: absolute;
+    bottom: 30px;
+    left: 35px;
+    color:#757575;
+}
+
+.panner .panner-img{
+    width: 100%;
+}
+
+.session-about{
+    width: 80%;
+    margin: auto;
+    padding-top: 60px;
+    height: auto;
+}
+
+.about-left{
+    width: 46%;
+    float: left;  
+}
+
+.about-left img{
+    width: 100%;
+    margin: auto;
+    border-radius:10px ;
+}
+
+.about-right{
+    width: 46%;
+    float: right;
+}
+
+.about-right h1{
+    text-align: center;
+    color: black;
+    padding-top: 10px;
+}
+
+.about-right h4{
+    text-align: center;
+    color: black;
+    padding-top: 50px;
+}
+
+p.about-1 {
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+span.seasonal {
+    color:black;
+    background-color:#f1f1f1;
+}
+
+p.about-2 {
+    font-size: 18px;
+    color: #757575;
+    padding-top: 20px;
+}
+
+
+.session-menu{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+}
+
+.menu-left .test{
+    color: #757575;
+}
+
+.menu-left{
+    width: 46%;
+    float: left;
+}
+.menu-right{
+    width: 46%;
+    float: right;
+}
+
+.menu-right img{
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.contact{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    height: auto;
+    padding-bottom: 80px;
+}
+
+.test-contact p{
+    font-size: 16px;
+    padding-top: 30px;
+}
+
+.test-contact h4{
+    color: cornflowerblue;
+}
+
+
+.test-contact .form {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 0px;
+    border-bottom: 1px solid black;
+}
+
+.test-contact .submit{
+    width: 130px;
+    height: 30px;
+    border: 0px;
+}
+
+.test-contact .submit:hover{
+    background-color: #757575;
+}
+
+.footer{
+    width: 100%;
+    height: 80px;
+    background-color:#757575;
+}
+
+.footer .footer-test{
+    padding-top:40px;
+    text-align: center;
+    display: block;
+}
+
+@media only screen and (max-width:768px) {
+    /* For mobile phones: */
+    .about-left, .about-right, .menu-left, .menu-right {
+      width:100%;
+    }
+    .menu{
+        display: none;
+    }
+
+    .menu:hover{
+        display: block;
+    }
+}
